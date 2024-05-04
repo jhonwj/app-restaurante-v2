@@ -1,0 +1,64 @@
+<ion-content class="loginBackground">
+  <svg height="100vh" viewBox="0 0 100 100" style="position:absolute;">
+    <path fill="#E40033" d="M0,0 
+    L140,0
+    C60,70 5,60 0,100z" />
+  </svg>
+  <svg height="80vh" viewBox="0 0 100 100" style="position:absolute;">
+    <path fill="#F5F5F7" d="M0,0 
+    L140,0
+    C40,90 20,40 0,100z" />
+  </svg>
+  <ion-grid>
+    <ion-row style="height: 10vh;">
+    </ion-row>
+    <ion-row class="ion-text-center">
+      <ion-title class="appTitle">APP RESTAURANTE</ion-title>
+    </ion-row>
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <img class="imgLogin" src="assets/images/menuImg.svg">
+      </ion-col>
+     </ion-row>
+  </ion-grid>
+  <ion-card class="ion-text-center secondBackground">
+    <ion-card-header>
+      <ion-label class="textLogin">ACCESO </ion-label>
+      <ion-icon class="iconLogin" name="lock-closed"></ion-icon>
+    </ion-card-header>
+    <ion-card-content class="ion-text-left">
+      <ion-item lines="none" class="selectEmpresa">
+        <ion-icon class="iconEmpresa" slot="start" name="home"></ion-icon>
+        <ion-select (click)="abrirEmpresas()" mode="md" cancelText="Cerrar" [(ngModel)]="rucEmpresa" interface="action-sheet" placeholder="Seleccione su empresa">
+          <ion-select-option *ngFor="let empresa of empresas" value="{{empresa.ruc}}">{{empresa.nombre}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-input placeholder="Usuario" [(ngModel)]="username"  type="text">
+        <ion-icon class="iconInput" slot="start" name="person"></ion-icon>
+      </ion-input>
+      <ion-input placeholder="Contraseña" [(ngModel)]="password" type="password">
+        <ion-icon class="iconInput" slot="start" name="key"></ion-icon>
+      </ion-input>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2"></ion-col>
+        <ion-col size="8">
+          <ion-button (click)="onIniciarSesion()" class="loginButton" expand="block">Iniciar Sesión</ion-button>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-label class="forgotPassword">¿Olvido su contraseña?</ion-label>
+  </ion-card>
+  <br>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center" style="color: white;">
+        Una APP de @NeurosystemPeru <br><b>Vers. 01.21.08</b> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

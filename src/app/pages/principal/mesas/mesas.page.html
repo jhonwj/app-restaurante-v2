@@ -1,0 +1,49 @@
+<ion-header #f7594d>
+  <ion-toolbar style="--background: #E40033;">
+    <ion-buttons slot="end">
+      <ion-menu-button style="font-weight: bold; color: white;"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-button (click)="onActualizar()">
+        <ion-icon slot="icon-only" color="light" name="refresh"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" color="light" style="font-weight: bold;">
+      <ion-label>
+        Restaurante Mesas
+      </ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contenedor">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <ion-title style="color: black; font-weight: bold;">Ordenes Activas</ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3" *ngFor="let preorden of preordenes; let i = index">
+        <ion-card>
+          <ion-card-header
+            (click)="mostrarOpcionMesa(preorden.IdMesa,preorden.IdPreOrden,preorden.EtiquetaMesa,preorden.IdCliente)"
+            [ngClass]="preorden.IdPreOrden==null?'disponible':(preorden.IdCliente==null?'ordenando':'ocupado')">
+            <ion-card-subtitle
+              style="font-size: 0.85rem; margin-bottom: -10px; margin-top: -10px;">{{preorden.EtiquetaMesa}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-activatable ripple-parent centrar" (click)="onIrMesa(preorden.IdPreOrden)">
+            <ion-img src="assets/images/mesa.png"></ion-img>
+            <ion-ripple-effect></ion-ripple-effect>
+          </ion-card-content>
+          <div *ngIf="!!preorden.UsuarioReg;">
+            <span style="color: #000000; font-size: 0.8rem; font-weight: bold;">
+              {{preorden.UsuarioReg}}
+            </span>
+          </div>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

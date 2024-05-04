@@ -1,0 +1,272 @@
+.toolbar{
+  --background: #E40033;
+}
+
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centrarMonto{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.labelTitulo{
+  color: black;
+  font-weight: bold;
+}
+
+.labelDividerMonto{
+  color: #E40033;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.rowPrecio{
+  font-size: 1.10rem;
+  font-weight: bold;
+  color: #E40033;
+}
+
+.labelCantidad{
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+* {
+    font-family: Montserrat-Regular;
+  }
+
+.botonCliente {
+    border: 1px solid #42d77d;
+    border-radius: 7px;
+    background-color: #42d77d;    
+   
+}
+
+.buttonCantidad{
+  color:#C1012A
+}
+
+.buttonRemove{
+  color:#C1012A
+}
+
+.fabButtonProducto{
+  margin-bottom: -60px !important;
+}
+
+.toolbarFooter{
+  --background: #F5F5F7;
+  background: #F5F5F7;
+}
+
+.botonProducto {
+  border: 1px solid #ffc409;
+  border-radius: 7px;
+  background-color: #ffc409;  
+  margin-left: 5px !important; 
+}
+
+.inputCliente{
+    --background: #FCEFEB;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.icono{
+    //color: #8B877E;
+    color: black; 
+    margin-left:10px;
+    font-size: 1.7rem;
+}
+
+.descrip{
+    overflow: hidden;
+     text-overflow: ellipsis; 
+     display: -webkit-box; -webkit-line-clamp: 3;
+     line-height: 16px; max-height: 32px; -webkit-box-orient: vertical
+}
+
+ion-card{
+    border-radius: 10px;
+}
+
+.contenedorImagen{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -18px;
+}
+
+.expand-wrapper {
+    transition: max-height 5s ease-out;
+    overflow: hidden;
+    height: auto;
+    border-top: 2px solid #ffc409;
+    margin-top: 5px;
+  }
+
+.botonBuscar {
+    border: 1px solid #3880ff;
+    border-radius: 7px;
+    background-color: #3880ff;    
+}
+
+.collapsed {
+max-height: 0 !important;
+}
+
+.centrarMargin{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 18px; 
+}
+
+.centroFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.no-ripple {
+    --ripple-color: white;
+  }
+
+.imagenProducto{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 23vw;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+.cardCategoria{
+    background: #E8F8EE;
+}
+
+.contenedor {
+    --background: #F5F5F7;
+    background: #F5F5F7;
+}
+
+ion-title{
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+
+.botonRealizar {
+    --background: #E40033;
+    font-weight: bold;
+    text-transform: none;
+}
+
+//CART
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  
+  .imagen{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15vw;
+    width: 15vw;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  ion-item-divider{
+    min-height:3px;
+  }
+  ion-row{
+    padding: 0px 10px;
+  }
+  ion-col{
+    padding: 7px 0px;
+  }
+  ion-label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .txt-bold{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .txt-free{
+    font-size: 18px;
+    font-weight: bold;
+    color: #009688;
+  }
+  .txt-total{
+    font-size: 30px;
+    font-weight: bold;
+    color: #E40033;
+  }
+  .btn-end {
+    height: 50px;
+    --background: #009688;
+    --border-radius: 15px !important;
+  }
+  .btn-plus{
+    --background: #f7594d;
+    --border-radius: 0px 9px 9px 0px;
+    
+  }
+  .btn-minus{
+    --background: #f7594d;
+    --border-radius: 9px 0px 0px 9px;
+    
+  }
+  .txt-mp{
+    --background: #b6b8c3;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    top: 3px;
+    border-radius: 0px;
+    width: 30px;
+    height: 36px;
+    margin-bottom: 20px;
+  }
+  ion-item {
+    --border-style: none;
+    padding: 0px 0px;
+  }
+  .item-inner{
+    padding-inline-end: 0px !important;
+    padding-inline-start: 0px !important;
+  }

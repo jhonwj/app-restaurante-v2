@@ -1,0 +1,73 @@
+.toolbar{
+    --background: #42d77d;
+}
+.buttonClose{
+    font-weight: bold;
+}
+
+.buttonBuscar {
+    border: 1px solid #3880ff;
+    border-radius: 7px;
+    background-color: #3880ff;    
+}
+
+.buttonAgregar{
+    border: 1px solid #ffc409;
+    border-radius: 7px;
+    background-color: #ffc409; 
+}
+
+.cardCliente{
+    margin-bottom: 5px;
+}
+
+.labelDniRuc{
+    color: black;
+    font-weight: bold;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+.centrarEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerTitulo{
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+* {
+    font-family: Montserrat-Regular;
+  }
+
+ion-card{
+    border-radius: 10px;
+}
+
+.contenedor {
+    --background: #F5F5F7;
+    background: #F5F5F7;
+}
+
+ion-button{
+    text-transform: capitalize;
+}
+
+.inputBusqueda{
+    --background: #FCEFEB;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.icono{
+    //color: #8B877E;
+    color: black; 
+    margin-left:10px;
+    font-size: 1.7rem;
+}

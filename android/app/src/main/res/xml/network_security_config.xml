@@ -1,0 +1,11 @@
+<network-security-config>
+  <base-config cleartextTrafficPermitted="true">
+    <trust-anchors>
+      <certificates src="system" />
+    </trust-anchors>
+  </base-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">http://204.48.21.196:80</domain>
+    <domain includeSubdomains="true">http://app.factura.vip</domain>
+  </domain-config>
+</network-security-config>

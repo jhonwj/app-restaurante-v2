@@ -1,0 +1,75 @@
+<ion-header>
+
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="end">
+      <ion-menu-button style="font-weight: bold; color: white;"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" style="font-weight: bold;" (click)="onIrMesas()" default-href="">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title color="light" class="titulo">
+        Impresoras
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contenedor">
+  <ion-grid fixed>
+    <br>
+    <ion-row>
+      <ion-col size="12" class="centrar">
+        <ion-img src="assets/images/impresora.png" ></ion-img>
+      </ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item-divider>
+          <ion-label>Lista de Impresoras:</ion-label>
+        </ion-item-divider>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card *ngFor="let impresora of impresoras; let i = index">
+          <ion-card-content>
+            <ion-row>
+              <ion-col class="centrar" size="2">
+                <ion-img  src="assets/images/impresora_termica.png"></ion-img>
+              </ion-col>
+              <ion-col size="6">
+                <ion-label style="font-weight: bold; color: black; margin-bottom: 8px; text-transform: uppercase;">
+                  {{impresora.NombreImpresora}}</ion-label>
+                <br>
+                <ion-label style="margin-bottom: 8px; text-transform: capitalize;">
+                  IP: {{impresora.Ip}}
+                </ion-label>
+                <br>
+                <ion-label style="margin-bottom: 8px; text-transform: capitalize;">
+                  Puerto: {{impresora.Puerto}}
+                </ion-label>
+              </ion-col>
+              <ion-col  size="4">
+                <ion-row>
+                  <ion-col size="12" class="centrar">
+                    <ion-buttons>
+                      <ion-button color="primary" (click)="onTestImpresora(i)">
+                        <ion-icon slot="icon-only" name="print"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="12" class="centrar">
+                    <ion-label color="primary">Test Impresora</ion-label>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

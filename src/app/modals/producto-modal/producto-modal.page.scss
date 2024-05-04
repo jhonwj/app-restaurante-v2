@@ -1,0 +1,166 @@
+.toolbar{
+    --background: #E40033;
+}
+
+.buttonClose{
+    font-weight: bold;
+}
+
+.labelCategoria{
+    color: black;
+    font-weight: bold;
+}
+
+.titulo{
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.cardProducto{
+    border-left: 10px solid #E40033;
+    margin-bottom: 10px;
+}
+
+.cardContentProducto{
+    margin-top: -15px;
+    margin-bottom: -15px;
+    background-color: white;
+    --background: white;
+}
+
+.rowProducto{
+    margin-top: 5px;
+}
+
+
+.cardCategoria{
+    background: #E8F8EE;
+}
+
+.contenedor {
+    --background: #F5F5F7;
+    background: #F5F5F7;
+}
+
+.imagenCat{
+    width: 100px;
+}
+
+.labelProducto{
+    color:black;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.labelExiste{
+    color: #C1012A;
+    font-weight: bold;
+}
+
+.labelPrecio{
+    font-size: 1.10rem;
+    font-weight: bold;
+    color: #E40033;
+}
+
+.buttonFlecha{
+    color: #E40033;
+}
+
+
+.itemIndicaciones{
+    border: 1px solid #E40033;
+    border-radius: 5px; 
+}
+
+.textAreaIndicaciones{
+    padding: 2px;
+}
+
+.iconLista{
+    color: #E40033;
+}
+
+.labelOpcionLista{
+    color: black;
+    font-weight: bold;
+}
+
+* {
+    font-family: Montserrat-Regular;
+  }
+  
+
+ion-segment::-webkit-scrollbar {
+    display: none;
+  }
+
+ion-segment-button{
+    --color-checked: var(--ion-color-danger-contrast);
+    --indicator-color: var(--ion-color-danger);
+  }
+
+.expand-wrapper {
+transition: max-height 5s ease-out;
+overflow: hidden;
+height: auto;
+border-top: 2px solid #E40033;
+margin-top: 0px;
+}
+
+.collapsed {
+display: none !important;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelCantidadTitulo{
+    font-size: 1.2rem;
+    color: black; 
+}
+
+.labelCantidad{
+    color: black;
+    font-size: 40px;
+}
+
+.buttonCantidad{
+    font-size: 40px;
+    color:#C1012A
+}
+
+.imagenProducto{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20vw;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.buttonAgregar{
+    text-transform: none;
+    --background: #C1012A;
+    color: white;
+    font-weight: bold;
+}
+
+.centrarIzq{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.colorBlancoFondo{
+    background-color: white;
+    --background: white;
+}
+
+.colorGrisFondo{
+    background-color: #F5F5F7;
+    --background: #F5F5F7;
+}

@@ -1,0 +1,31 @@
+.toolbar{
+  --background: #E40033;
+}
+
+ion-img {
+    width: 18vh;
+  }
+
+.contenedor {
+  --background: #F5F5F7;
+  background: #F5F5F7;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-card{
+  border-radius: 10px;
+}
+
+* {
+  font-family: Montserrat-Regular;
+}
+
+.titulo{
+  font-weight: bold;
+  margin-left: -20px;
+}

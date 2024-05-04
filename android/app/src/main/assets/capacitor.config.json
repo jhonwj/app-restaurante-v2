@@ -1,0 +1,12 @@
+{
+	"appId": "io.neurofood.restaurante",
+	"appName": "Neuro Food",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 4000,
+			"launchAutoHide": false
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.loginBackground{
+    // --background: #FFFFFF;
+    --background: #DB0131;  /* fallback for old browsers */
+
+}
+
+.secondBackground{
+    --background: #FFFFFF;
+    min-height: 180px;
+    margin: 0px 40px;
+    padding: 20px 0px;
+    border-radius: 20px 20px 20px 20px;
+    border: 0px;
+    outline: none;
+}
+
+.textLogin{
+    background: #E40033;  /* fallback for old browsers */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.iconLogin{
+    color:#E40033;
+    font-size: 1.3rem;
+}
+
+.iconEmpresa{
+    color: #E40033;
+    margin-right: 5px !important;
+}
+.loginButton{
+    --background: #E40033;  /* fallback for old browsers */
+    min-height: 50px;
+    --border-radius: 10px;
+}
+.forgotPassword{
+    font-size: 18px;
+    font-weight: 500;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.appTitle{
+    font-size: 1.9rem;
+    font-weight: bold;
+    justify-content: center;
+    background: black;  /* fallback for old browsers */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.imgLogin{
+    width: 48vw;
+    z-index: 100;
+}
+
+
+ion-input {
+    margin-top: 8px;
+    --background: #F5F5F7;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.iconInput{
+    color: #E40033;
+    margin-left:20px;
+}
+.selectEmpresa{
+    margin-top: 8px;
+    --background: #F5F5F7;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+* {
+font-family: Montserrat-Light;
+}

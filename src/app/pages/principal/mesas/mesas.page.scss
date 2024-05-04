@@ -1,0 +1,50 @@
+.contenedor {
+    --background: #F5F5F7;
+    background: #F5F5F7;
+}
+
+ion-card-subtitle{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+ion-card{
+    border-radius: 10px;
+}
+
+* {
+    font-family: Montserrat-Regular;
+  }
+
+.ocupado{
+    --background:  #E40033;
+}
+
+.disponible{
+    --background: #3171e0;
+}
+
+.ordenando{
+    --background: #28a745;
+}
+
+
+ion-card-subtitle{
+    color: white;
+}
+
+.alertNuevaOrden{
+    --background: green;
+}
+
+ion-img{
+    width: 12vw;
+    height: 12vw;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}

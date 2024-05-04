@@ -1,0 +1,31 @@
+.headerBackground{
+    --background: rgb(228, 0, 51, 0.8);
+    background-image: url("../../../assets/icon/diagmonds.png");
+    min-height: 150px;
+}
+.menuAvatar{
+    margin-top: 10px;
+    margin-left: 20px;
+    min-height: 50px;
+    min-width: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+.usernameMenuItem{
+    --background: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.usernameMenu{
+    color: #ECE9E6;  /* fallback for old browsers */
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
